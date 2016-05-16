@@ -1,3 +1,32 @@
+@charset "UTF-8";
+p {
+  font-size: 14px; }
+
+/* Cadenas */
+.cadena {
+  content: "Hola mundo!"; }
+
+/* Números */
+.numero {
+  margin-bottom: 7%; }
+
+.interpolacion {
+  background-image: url("icon.png"); }
+
+/* Listas */
+.icon-facebook {
+  background-image: url("facebook.png"); }
+
+.icon-twitter {
+  background-image: url("twitter.png"); }
+
+.icon-linkedin {
+  background-image: url("linkedin.png"); }
+
+/* Mapas */
+.mapa {
+  content: "Otro valor"; }
+
 .container {
   margin: 0 auto;
   max-width: 680px;
@@ -23,10 +52,10 @@
   padding: 10px 20px;
   background-color: #9bc1bc;
   color: white;
-  text-decoration: none;
-  text-transform: uppercase;
   font-size: 0.8em;
-  border-radius: 4px; }
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase; }
   .btn-cta {
     background-color: #ed6a5a;
     position: relative;
