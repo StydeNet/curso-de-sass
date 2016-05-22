@@ -7,10 +7,7 @@
 }
 
 .box {
-    padding: 10px;
-    background-color: #e6ebe0;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    @include box($box-radius, $box-bg, 20px);
 
     .head {
         border-bottom: 1px solid #9bc1bc;
@@ -24,6 +21,26 @@
     
     .cont {
         padding-top: 10px;
+    }
+}
+
+.box-grey {
+    @include box(6px, #f3f3f3, 50px);
+}
+
+.selector {
+    padding: 20px;
+    @include mq-tablet {
+        padding: 10px;
+    }
+}
+
+@include mq-tablet {
+    .selector {
+        padding: 20px;
+    }
+    .selector2 {
+        padding: 10px;
     }
 }
 

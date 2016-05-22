@@ -37,7 +37,8 @@ p {
   padding: 10px;
   background-color: #e6ebe0;
   border-radius: 5px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  color: #444; }
   .box .head {
     border-bottom: 1px solid #9bc1bc;
     padding-bottom: 10px; }
@@ -47,6 +48,25 @@ p {
   .box .cont {
     padding-top: 10px; }
 
+.box-grey {
+  padding: 25px;
+  background-color: #f3f3f3;
+  border-radius: 6px;
+  margin-bottom: 50px;
+  color: #444; }
+
+.selector {
+  padding: 20px; }
+  @media (min-width: 680px) and (max-width: 1024px) {
+    .selector {
+      padding: 10px; } }
+
+@media (min-width: 680px) and (max-width: 1024px) {
+  .selector {
+    padding: 20px; }
+
+  .selector2 {
+    padding: 10px; } }
 .btn {
   display: inline-block;
   padding: 10px 20px;
