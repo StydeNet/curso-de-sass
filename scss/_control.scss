@@ -1,5 +1,6 @@
 // Estructuras de control
 $if1: 35;
+
 @if $if1 == 20 {
     .if {
         width: 20px;
