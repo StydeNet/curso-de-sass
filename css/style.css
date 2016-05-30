@@ -1,4 +1,130 @@
 @charset "UTF-8";
+.if {
+  width: 10px; }
+
+.btn-facebook {
+  display: inline-block;
+  padding: 10px 20px 10px 36px;
+  color: white;
+  font-size: 0.8em;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #3b5998;
+  background-image: url("../img/icon-facebook.png");
+  background-position: 8px 50%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px; }
+
+.btn-twitter {
+  display: inline-block;
+  padding: 10px 20px 10px 36px;
+  color: white;
+  font-size: 0.8em;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #00aced;
+  background-image: url("../img/icon-twitter.png");
+  background-position: 8px 50%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px; }
+
+.btn-gplus {
+  display: inline-block;
+  padding: 10px 20px 10px 36px;
+  color: white;
+  font-size: 0.8em;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #dd4b39;
+  background-image: url("../img/icon-gplus.png");
+  background-position: 8px 50%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px; }
+
+.col1 {
+  margin: 0 10px;
+  width: 60px; }
+
+.col2 {
+  margin: 0 10px;
+  width: 120px; }
+
+.col3 {
+  margin: 0 10px;
+  width: 180px; }
+
+.col4 {
+  margin: 0 10px;
+  width: 240px; }
+
+.col5 {
+  margin: 0 10px;
+  width: 300px; }
+
+.col6 {
+  margin: 0 10px;
+  width: 360px; }
+
+.col7 {
+  margin: 0 10px;
+  width: 420px; }
+
+.col8 {
+  margin: 0 10px;
+  width: 480px; }
+
+.col9 {
+  margin: 0 10px;
+  width: 540px; }
+
+.col10 {
+  margin: 0 10px;
+  width: 600px; }
+
+.col11 {
+  margin: 0 10px;
+  width: 660px; }
+
+.col12 {
+  margin: 0 10px;
+  width: 720px; }
+
+.pre1 {
+  margin-left: 80px; }
+
+.pre2 {
+  margin-left: 160px; }
+
+.pre3 {
+  margin-left: 240px; }
+
+.pre4 {
+  margin-left: 320px; }
+
+.pre5 {
+  margin-left: 400px; }
+
+.pre6 {
+  margin-left: 480px; }
+
+.pre7 {
+  margin-left: 560px; }
+
+.pre8 {
+  margin-left: 640px; }
+
+.pre9 {
+  margin-left: 720px; }
+
+.pre10 {
+  margin-left: 800px; }
+
+.pre11 {
+  margin-left: 880px; }
+
 p {
   font-size: 14px; }
 
