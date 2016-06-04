@@ -17,7 +17,7 @@ $if1: 35;
 
 $redes: (facebook, #3b5998), (twitter, #00aced), (gplus, #dd4b39);
 
-@mixin btn {
+%btn {
     display: inline-block;
     padding: 10px 20px 10px 36px;
     color: white;
@@ -26,18 +26,20 @@ $redes: (facebook, #3b5998), (twitter, #00aced), (gplus, #dd4b39);
     text: {
         decoration: none;
         transform: uppercase;
-    }    
+    }
+    background: {
+        position: 8px 50%;
+        repeat: no-repeat;
+        size: 20px 20px;
+    }  
 }
 
 @each $red, $color in $redes {
     .btn-#{$red} {
-        @include btn;
+        @extend %btn;
         background: {
             color: $color;
             image: url('../img/icon-#{$red}.png');
-            position: 8px 50%;
-            repeat: no-repeat;
-            size: 20px 20px;
         }
     }
 }

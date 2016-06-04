@@ -1,8 +1,24 @@
 @charset "UTF-8";
+.sel, .nuevo, .otro {
+  width: 100px;
+  height: 100px;
+  position: relative; }
+  .sel.big, .big.nuevo, .big.otro {
+    font-size: 1.2em;
+    padding: 20px; }
+
+.nuevo, .otro {
+  color: blue; }
+
+.boton, .boton2 {
+  display: inline-block;
+  padding: 10px;
+  text-transform: uppercase; }
+
 .if {
   width: 10px; }
 
-.btn-facebook {
+.btn-facebook, .btn-twitter, .btn-gplus {
   display: inline-block;
   padding: 10px 20px 10px 36px;
   color: white;
@@ -10,39 +26,21 @@
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #3b5998;
-  background-image: url("../img/icon-facebook.png");
   background-position: 8px 50%;
   background-repeat: no-repeat;
   background-size: 20px 20px; }
+
+.btn-facebook {
+  background-color: #3b5998;
+  background-image: url("../img/icon-facebook.png"); }
 
 .btn-twitter {
-  display: inline-block;
-  padding: 10px 20px 10px 36px;
-  color: white;
-  font-size: 0.8em;
-  border-radius: 4px;
-  text-decoration: none;
-  text-transform: uppercase;
   background-color: #00aced;
-  background-image: url("../img/icon-twitter.png");
-  background-position: 8px 50%;
-  background-repeat: no-repeat;
-  background-size: 20px 20px; }
+  background-image: url("../img/icon-twitter.png"); }
 
 .btn-gplus {
-  display: inline-block;
-  padding: 10px 20px 10px 36px;
-  color: white;
-  font-size: 0.8em;
-  border-radius: 4px;
-  text-decoration: none;
-  text-transform: uppercase;
   background-color: #dd4b39;
-  background-image: url("../img/icon-gplus.png");
-  background-position: 8px 50%;
-  background-repeat: no-repeat;
-  background-size: 20px 20px; }
+  background-image: url("../img/icon-gplus.png"); }
 
 .col1 {
   margin: 0 10px;
