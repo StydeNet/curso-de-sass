@@ -1,4 +1,11 @@
 @charset "UTF-8";
+.fsel {
+  width: 30px;
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.selector {
+  color: #006600; }
+
 .sel, .nuevo, .otro {
   width: 100px;
   height: 100px;

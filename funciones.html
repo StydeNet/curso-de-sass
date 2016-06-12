@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de funciones de Sass</title>
+</head>
+<body>
+<style>
+    body {
+        font-family: sans-serif;
+    }
+    dl {
+        margin: 0 0 20px 0;
+    }
+    dt {
+        padding: 5px;
+        background-color: #f2f2f2;
+        font-family: monospace;
+        border-bottom: 1px dotted #ccc;
+    }
+    dd {
+        padding: 5px;
+        margin: 0 0 10px 0;
+    }
+</style>
+    <p>Lista de funciones nativas de Sass</p>
+    <h3>Funciones para RGB</h3>
+    <dl>
+        <dt>rgb($red, $green, $blue)</dt>
+        <dd>Genera un color usando los valores red, green, y blue.</dd>
+        <dt>rgba($red, $green, $blue, $alpha)</dt>
+        <dd>Genera un color con transparencia usando los valores red, green, blue, y alpha.</dd>
+        <dt>red($color)</dt>
+        <dd>Obtiene el valor del componente red de un color.</dd>
+        <dt>green($color)</dt>
+        <dd>Obtiene el valor del componente green de un color.</dd>
+        <dt>blue($color)</dt>
+        <dd>Obtiene el valor del componente blue de un color.</dd>
+        <dt>mix($color1, $color2, [$weight])</dt>
+        <dd>Mezcla $color1 con $color2 al porcentaje dado en $weight.</dd>
+    </dl>
+    <h3>Funciones para HSL</h3>
+    <dl>
+        <dt>hsl($hue, $saturation, $lightness)</dt>
+        <dd>Genera un color usando valores hue, saturation, y lightness.</dd>
+        <dt>hsla($hue, $saturation, $lightness, $alpha)</dt>
+        <dd>Genera un color con transparencia usando valores hue, saturation, lightness, y alpha.</dd>
+        <dt>hue($color)</dt>
+        <dd>Obtiene el componente hue de un color.</dd>
+        <dt>saturation($color)</dt>
+        <dd>Obtiene el componente saturation de un color.</dd>
+        <dt>lightness($color)</dt>
+        <dd>Obtiene el componente lightness de un color.</dd>
+        <dt>adjust-hue($color, $degrees)</dt>
+        <dd>Cambia el hue de un color.</dd>
+        <dt>lighten($color, $amount)</dt>
+        <dd>Aclara un color.</dd>
+        <dt>darken($color, $amount)</dt>
+        <dd>Oscurece un color.</dd>
+        <dt>saturate($color, $amount)</dt>
+        <dd>Aumenta la saturación de un color.</dd>
+        <dt>desaturate($color, $amount)</dt>
+        <dd>Disminuye la saturación de un color.</dd>
+        <dt>grayscale($color)</dt>
+        <dd>Convierte un color a gris.</dd>
+        <dt>complement($color)</dt>
+        <dd>Devuelve el complemento de un color.</dd>
+        <dt>invert($color)</dt>
+        <dd>Devuelve el color opuesto.</dd>
+    </dl>
+    <h3>Funciones para transparencia</h3>
+    <dl>
+        <dt>alpha($color) / opacity($color)</dt>
+        <dd>Obtiene el componente alpha de un color (transparencia).</dd>
+        <dt>rgba($color, $alpha)</dt>
+        <dd>Cambia el componente alpha de un color (transparencia).</dd>
+        <dt>opacify($color, $amount) / fade-in($color, $amount)</dt>
+        <dd>Hace un color mas opaco (menos transparente).</dd>
+        <dt>transparentize($color, $amount) / fade-out($color, $amount)</dt>
+        <dd>Aumenta la transparencia.</dd>
+    </dl>
+    <h3>Otras Funciones de color</h3>
+    <dl>
+        <dt>adjust-color($color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha])</dt>
+        <dd>Aumenta o disminuye uno o mas componentes de un color.</dd>
+        <dt>scale-color($color, [$red], [$green], [$blue], [$saturation], [$lightness], [$alpha])</dt>
+        <dd>Escala fluidamente una o más propiedades de un color.</dd>
+        <dt>change-color($color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha])</dt>
+        <dd>Cambia una o más propiedades de un color.</dd>
+        <dt>ie-hex-str($color)</dt>
+        <dd>Convierte un color al formato entendido por filtros para IE.</dd>
+    </dl>
+    <h3>Funciones para cadenas</h3>
+    <dl>
+        <dt>unquote($string)</dt>
+        <dd>Remueve comillas de una cadena.</dd>
+        <dt>quote($string)</dt>
+        <dd>Agrega comillas a una cadena.</dd>
+        <dt>str-length($string)</dt>
+        <dd>Devuelve el número de caracteres en una cadena.</dd>
+        <dt>str-insert($string, $insert, $index)</dt>
+        <dd>Agrega <code>$insert</code> dentro de <code>$string</code> en la posición <code>$index</code>.</dd>
+        <dt>str-index($string, $substring)</dt>
+        <dd>Devuelve la posición de la primera ocurrencia de <code>$substring</code> dentro de <code>$string</code>.</dd>
+        <dt>str-slice($string, $start-at, [$end-at])</dt>
+        <dd>Extrae una sub-cadena de <code>$string</code>.</dd>
+        <dt>to-upper-case($string)</dt>
+        <dd>Convierte una cadena a mayúsculas.</dd>
+        <dt>to-lower-case($string)</dt>
+        <dd>Convierte una cadena a minúsculas.</dd>
+    </dl>
+    <h3>Funciones para números</h3>
+    <dl>
+        <dt>percentage($number)</dt>
+        <dd>Convierte un número sin unidad, a un porcentaje.</dd>
+        <dt>round($number)</dt>
+        <dd>Redondea un número a un entero (sin decimales).</dd>
+        <dt>ceil($number)</dt>
+        <dd>Redondea un número al entero superior más cercano.</dd>
+        <dt>floor($number)</dt>
+        <dd>Redondea un número al entero inferior más cercano.</dd>
+        <dt>abs($number)</dt>
+        <dd>Devuelve el valor absoluto de un número.</dd>
+        <dt>min($numbers…)</dt>
+        <dd>Encuentra el valor menor de un grupo de números.</dd>
+        <dt>max($numbers…)</dt>
+        <dd>Encuentra el valor mayor de un grupo de números.</dd>
+        <dt>random([$limit])</dt>
+        <dd>Devuelve un número aleatorio (límite opcional).</dd>
+    </dl>
+    <h3>Funciones para listas</h3>
+    <p>Las listas en Sass son inmutables (no se pueden modificar); todas las funciones para listas devuelver una nueva lista en vez de modificar la lista original.</p>
+    <p>Todas las funciones para listas funcionan para mapas también, tratando sus valores como listas de dos valores.</p>
+    <dl>
+        <dt>length($list)</dt>
+        <dd>Devuelve la longitud de una lista.</dd>
+        <dt>nth($list, $n)</dt>
+        <dd>Devuelve el elemento en posición <code>$n</code> de una lista.</dd>
+        <dt>set-nth($list, $n, $value)</dt>
+        <dd>Reemplaza el elemento en posición <code>$n</code> con <code>$value</code> en una lista.</dd>
+        <dt>join($list1, $list2, [$separator])</dt>
+        <dd>Une dos listas en una sola.</dd>
+        <dt>append($list1, $val, [$separator])</dt>
+        <dd>Agrega un elemento al final de una lista (opcionalmente separado por <code>$separator</code>).</dd>
+        <dt>zip($lists…)</dt>
+        <dd>Combina multiples listas en una lista multidimensional.</dd>
+        <dt>index($list, $value)</dt>
+        <dd>Devuelve la posición de un elemento en una lista.</dd>
+        <dt>list-separator($list)</dt>
+        <dd>Devuelve el separador usado en una lista.</dd>
+    </dl>
+    <h3>Funciones para mapas</h3>
+    <p>Los mapas en Sass son inmutables (no se pueden modificar); todas las funciones de mapas  devuelven un mapa nuevo en vez de modificar el mapa original</p>
+    <dl>
+        <dt>map-get($map, $key)</dt>
+        <dd>Devuelve el valor asociado a <code>$key</code> de un mapa.</dd>
+        <dt>map-merge($map1, $map2)</dt>
+        <dd>Combina dos mapas en uno.</dd>
+        <dt>map-remove($map, $keys…)</dt>
+        <dd>Devuelve un nuevo mapa sin los elementos especificados en <code>$keys</code>.</dd>
+        <dt>map-keys($map)</dt>
+        <dd>Devuelve una lista de todos los keys en un mapa.</dd>
+        <dt>map-values($map)</dt>
+        <dd>Devuelve una lista de todos los valores en un mapa.</dd>
+        <dt>map-has-key($map, $key)</dt>
+        <dd>Devuelve verdadero o falso dependiendo de si <code>$key</code> existe en un mapa.</dd>
+        <dt>keywords($args)</dt>
+        <dd>Devuelve los keywords pasados a una función que acepta argumentos variables.</dd>
+    </dl>
+    <h3>Funciones para selectores</h3>
+    <p>Las funciones para selectores son bastante liberales en los formatos que soportan en los argumentos para selectores.</p>
+    <ul>
+        <li>Cadenas sencillas como <code>&quot;.foo .bar, .baz .bang&quot;</code>.</li>
+        <li>Una lista de cadenas separadas por espacios <code>(&quot;.foo&quot; &quot;.bar&quot;)</code>.</li>
+        <li>Una lista de cadenas separadas por comas como <code>(&quot;.foo .bar&quot;, &quot;.baz .bang&quot;)</code>.</li>
+        <li>Una lista separada por comas que contenga listas de cadenas como <code>((&quot;.foo&quot; &quot;.bar&quot;), (&quot;.baz&quot; &quot;.bang&quot;))</code>.</li>
+    </ul>
+    <p>En general, las funciones de selectores aceptan selectores placeholder (<code>%foo</code>) pero no aceptan selectores que se refieren al selector padre (<code>&amp;</code>).</p>
+    <dl>
+        <dt>selector-nest($selectors…)</dt>
+        <dd>Anida un selector dentro de otro, como se anidarían en la hoja de estilos.</dd>
+        <dt>selector-append($selectors…)</dt>
+        <dd>Adjunta un selector a otro sin colocar un espacio entre ellos.</dd>
+        <dt>selector-extend($selector, $extendee, $extender)</dt>
+        <dd>Extiende <code>$extendee</code> con <code>$extender</code> dentro de <code>$selector</code>.</dd>
+        <dt>selector-replace($selector, $original, $replacement)</dt>
+        <dd>Reemplaza <code>$original</code> con <code>$replacement</code> dentro de <code>$selector</code>.</dd>
+        <dt>selector-unify($selector1, $selector2)</dt>
+        <dd>Une dos selectores para producir un selector que abarca elementos que coinciden con ambos.</dd>
+        <dt>is-superselector($super, $sub)</dt>
+        <dd>Devuelve verdadero o false si <code>$super</code> coincide con todos los elementos que <code>$sub</code> o posiblemente otros.</dd>
+        <dt>simple-selectors($selector)</dt>
+        <dd>Devuelve los selectores simples que componen un selector compuesto.</dd>
+        <dt>selector-parse($selector)</dt>
+        <dd>Parsea un selector en el formato devuelto por <code>&amp;</code>.</dd>
+    </dl>
+    <h3>Funciones para instrospección</h3>
+    <p>Estas funciones devuelven información acerca del código, de su contexto y entorno.</p>
+    <dl>
+        <dt>feature-exists($feature)</dt>
+        <dd>Devuelve verdadero o false si un feature existe en el tiempo de ejecución de Sass actual.</dd>
+        <dt>variable-exists($name)</dt>
+        <dd>Devuelve verdadero o falso si una variable con el nombre dado existe en el ámbito actual.</dd>
+        <dt>global-variable-exists($name)</dt>
+        <dd>Devuelve verdadero o falso si una variable con el nombre dado existe en el ámbito global.</dd>
+        <dt>function-exists($name)</dt>
+        <dd>Devuelve verdadero o falso si una función con el nombre dado existe.</dd>
+        <dt>mixin-exists($name)</dt>
+        <dd>Devuelve verdadero o falso si un mixin con el nombre dado existe.</dd>
+        <dt>inspect($value)</dt>
+        <dd>Devuelve la cadena que representa a un valor como sería interpretado en Sass.</dd>
+        <dt>type-of($value)</dt>
+        <dd>Devuelve el tipo de dato de un valor.</dd>
+        <dt>unit($number)</dt>
+        <dd>Devuelve el tipo de unidad asociada con un número.</dd>
+        <dt>unitless($number)</dt>
+        <dd>Devuelve verdadero o falso si un número tiene un tipo de unidad asociado.</dd>
+        <dt>comparable($number1, $number2)</dt>
+        <dd>Devuelve verdadero o falso si dos números pueden ser sumados, restados o comparados.</dd>
+        <dt>call($name, $args…)</dt>
+        <dd>Llama dinámicamente a una función de Sass.</dd>
+    </dl>
+    <h3>Funciones Miscelaneas</h3>
+    <dl>
+        <dt>if($condition, $if-true, $if-false)</dt>
+        <dd>Devuelve un valor u otro dependiendo de una condición.</dd>
+        <dt>unique-id()</dt>
+        <dd>Devuelve un identificador único de CSS.</dd>
+    </dl>
+</body>
+</html>
