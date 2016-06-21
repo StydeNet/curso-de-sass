@@ -4,7 +4,16 @@ $box-radius: 5px;
 @mixin box($radius: null, $bg: #f2f2f2, $space: 20px) {
     padding: ($space / 2);
     background-color: $bg;
-    border-radius: $radius;
+    // @if unitless($radius) {
+    //     @warn "La unidad es requerida en el argumento #{$radius}, se usará px por defecto.";
+    //     $radius: 1px * $radius;
+    // }
+    // border-radius: $radius;
+    @if unit($radius) != 'px' {
+        @error "La unidad debe ser pixeles";
+    } @else  {
+        border-radius: $radius;
+    }
     margin-bottom: $space;
     @if lightness($bg) < 50% {
         color: #fff;
