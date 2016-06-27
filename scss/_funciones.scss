@@ -1,8 +1,5 @@
 // Funciones
 
-$fvar: 30px;
-$fcolor: white;
-$color: rgba($fcolor, 0.3);
 .fsel {
     width: if($fvar < 100px, $fvar, 100%);
     background-color: $color;

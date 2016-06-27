@@ -1,5 +1,7 @@
-$box-bg: #e6ebe0;
-$box-radius: 5px;
+// Mixins
+// $radius: valor en pixeles
+// $bg: color para fondo
+// $space: valor en pixeles para espaciado
 
 @mixin box($radius: null, $bg: #f2f2f2, $space: 20px) {
     padding: ($space / 2);

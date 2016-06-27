@@ -1,58 +1,27 @@
-$text: #444;
-$font-family: 'Helvetica', sans-serif;
-$title: #888;
-$title-font-family: 'Georgia', serif;
-
-// Definición de variables
-// $nombre: valor;
-$fs: 14px;
 
 // Uso de variables
 p {
     font-size: $fs;
 }
 
-/* Cadenas */
-$cadena: 'valor';
-
 @if($cadena == 'valor') {} // true
 @if($cadena) {} // true
 
-$cadena1: "Hola ";
-$cadena2: 'mundo!';
-$cadena3: $cadena1 + $cadena2;
+// Cadenas
 .cadena {
     content: $cadena3;
 }
 
-/* Números */
-$numero1: 14%;
-$numero2: 2;
 .numero {
     margin-bottom: ($numero1 / $numero2);
 }
 
-// Null 
-$var-null: 4; // Nada
-$var-null: 6 !default; // 4
-
-// Boleano
-$boolean1: 1; // true
-$boolean2: 0; // true
-$boolean3: ''; // true
-$boolean4: 'cadena'; // true
-$boolean5: true; // true
-$boolean6: null; // false
-$boolean7: false; // false
-
 // Interpolación 
-$image: 'icon.png';
 .interpolacion {
     background-image: url('#{$image}');
 }
 
 /* Listas */
-$lista: facebook, twitter, linkedin;
 @each $item in $lista {
     .icon-#{$item} {
         background-image: url('#{$item}.png');
@@ -60,10 +29,6 @@ $lista: facebook, twitter, linkedin;
 }
 
 /* Mapas */
-$mapa: (
-    clave: 'valor',
-    otra-clave: 'Otro valor'
-);
 .mapa {
     content: map-get($mapa, otra-clave);
 }

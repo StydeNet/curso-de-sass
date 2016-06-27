@@ -1,0 +1,57 @@
+$text: #444;
+$font-family: 'Helvetica', sans-serif;
+$title: #888;
+$title-font-family: 'Georgia', serif;
+
+// Definición de variables
+// $nombre: valor;
+$fs: 14px;
+
+// Cadenas
+$cadena: 'valor';
+$cadena1: "Hola ";
+$cadena2: 'mundo!';
+$cadena3: $cadena1 + $cadena2;
+
+// Números 
+$numero1: 14%;
+$numero2: 2;
+
+// Null 
+$var-null: 4; // Nada
+$var-null: 6 !default; // 4
+
+// Boleano
+$boolean1: 1; // true
+$boolean2: 0; // true
+$boolean3: ''; // true
+$boolean4: 'cadena'; // true
+$boolean5: true; // true
+$boolean6: null; // false
+$boolean7: false; // false
+
+// Listas
+$lista: facebook, twitter, linkedin;
+
+// Mapas 
+$mapa: (
+    clave: 'valor',
+    otra-clave: 'Otro valor'
+);
+
+// Interpolación 
+$image: 'icon.png';
+
+
+// Estructuras de control
+$if1: 35;
+$redes: (facebook, #3b5998), (twitter, #00aced), (gplus, #dd4b39);
+
+// Funciones
+$fvar: 30px;
+$fcolor: white;
+$color: rgba($fcolor, 0.3);
+
+// Mixins
+$box-bg: #e6ebe0;
+$box-radius: 5px;
