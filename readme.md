@@ -2,7 +2,7 @@
 
 Styde es una nueva comunidad de desarrollo web en español. Con nosotros podrás aprender Laravel, PHP y otras tecnologías, desde tutoriales básicos gratuitos hasta cursos avanzados a bajo costo, de la mano de profesionales con años de experiencia.
 
-# Curso de SASS
+# Curso de Sass
 En este curso te enseñaremos a trabajar con Sass desde lo más básico hasta las características más avanzadas y de manera eficiente para que aprendas a escribir CSS pre-procesado y usarlo en tus proyectos.
 
 Sass (Syntactically Awesome StyleSheets) es una extensión de CSS que le añade poder y elegancia al lenguaje. Es comúnmente llamado un pre-procesador de CSS. Ayuda a mantener grandes hojas de estilos de una manera organizada, permitiendo usar variables, reglas anidadas, mixins, importaciones, entre otros. Es compatible con la sintaxis de CSS.
